@@ -13,10 +13,12 @@ test: build/temp_test
 	./build/temp_test
 	
 
-install:
+install: build/temp_test build/libtemptest.so
 	cp build/libtemptest.so /usr/lib
 	cp src/temp_test.h /usr/include
+	cp build/temp_test /bin
 
 uninstall:
 	rm /usr/lib/libtemptest.so
 	rm /usr/include/temp_test.h
+	rm /bin/temp_test

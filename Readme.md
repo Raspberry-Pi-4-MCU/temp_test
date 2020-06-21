@@ -29,3 +29,8 @@ sudo make uninstall
 ```
 gcc your_c_source_code -ltemptest -o your_ELF_name
 ```
+
+- bash call(after call)
+```
+temp_test
+```
